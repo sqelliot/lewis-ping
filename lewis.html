@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+.header {
+  padding: 1px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+  font-size: 10px;
+}
+
+.2coldiv {
+  column-count: 2;
+}
+
+.lewisBody {
+  <!--padding: 30px;-->
+  text-align: left;
+  backgorund: #5DD7EE;
+  color: black;
+  font-size: 15px;
+  outline: 0.01em solid black;
+  float: left;
+  <!--height: 470px;-->
+  width: 30%;
+  padding: 0 10px;
+}
+
+.button {
+  float: left;
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+.rainbow-lr {
+  background: linear-gradient(to right, red, orange , yellow, green, cyan, blue, violet);
+  <!--color:transparent;-->
+  background-clip: text;
+  background-color: brown;
+}
+
+#boxes {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.content {padding:20px;}
+</style>
+</head>
+
+<body>
+<div class="header">
+    <h1>The Lewis Bonny Pinging Service</h1>
+</div>
+
+<div class="2coldiv">
+    <div class="lewisBody">
+        <h2> Lewis Bonny, please push this button to confirm your existence...</h2>
+        <div class="2coldiv">
+          <button class="button" onclick="result()" id="theButton">Click Me!</button>
+          <h1 class="rainbow-lr" id="theResult"></h1>
+        </div>
+    </div>
+
+</div>
+
+
+<script>
+    function result() {
+        document.getElementById("theButton").remove();
+        document.getElementById("theResult").innerHTML = "Damn dude you are pretty gay..."
+    }
+</script>
+
+</body>
+</html>
